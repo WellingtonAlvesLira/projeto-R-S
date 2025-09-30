@@ -1,0 +1,144 @@
+           *{
+                margin: 0;
+                padding: 0;
+            }
+            header ul{
+                list-style: none;
+                text-align: end;
+                margin-bottom: 10px;
+                
+            }
+            .lista-navegacao li{
+                display: inline;
+                padding: 0.34rem;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                font-weight: 400;
+                background: rgba(0, 0, 0, 0.6);
+                border-bottom: 4px solid rgb(232, 221, 100);
+        
+                
+            }
+            li:hover{
+                cursor: pointer;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+           .cabecalho-navegacao{
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            height: 10rem;
+            background-position: center; 
+        }
+
+           nav{
+            width: 750px;
+           }
+
+           .titulo-navegacao{
+              border: 2px solid rgb(232, 221, 100);
+              display: inline;
+              font-size: 2.3rem;
+              padding-left: 0.28rem;
+              color: white;
+              background: rgba(3, 11, 58, 0.237);
+            
+           }
+            
+           .menu-servicos{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            padding: 0.89rem;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+           }
+
+           .menu-servicos li{
+            list-style: none;
+            text-transform: uppercase;
+            border-right: 5px solid rgba(10, 10, 40, 0.826);
+            padding: 5px;
+           }
+
+           .secao-apresentacao-background{
+            display: flex;
+            justify-content: center;
+            
+           }
+
+           .secao-apresentacao{
+            background: rgba(96, 93, 93, 0.459);
+            height: 700px;
+            width: 80%;
+            padding: 0.89rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;           
+            }
+            .secao-apresentacao h1{
+                font-size: 2.9rem;
+            }
+            .secao-apresentacao h2{
+                font-size: 1.96rem;
+            }
+            .secao-apresentacao h3{
+                font-weight: 700;
+                background: rgb(121, 212, 121);
+                padding: 0.98rem;
+                border-radius: 20px;
+            }
+            .secao-identidade-empresa{
+                margin-top: 10px;
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content:space-around;
+                align-items: center;
+                background: rgb(46, 46, 46);
+                padding: 0.59rem;
+
+            }
+            .secao-identidade-empresa header{
+                width: 90%;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .secao-identidade-empresa h1{
+                font-size: 2.60rem;
+            }
+
+            .secao-identidade-empresa p{
+                font-size: 1.58rem;
+                text-align: center;
+            }
+
+            .secao-identidade-empresa-pilares{
+                display: flex;
+                color: white;
+                width: 100%;
+                justify-content: space-around;
+                background: rgba(96, 93, 93, 0.459);
+                padding: 5px;
+            }
+            .secao-identidade-empresa-pilares img{
+               width: 140px;
+               border-bottom:3px dotted white;
+               margin: 3px;
+
+            }
+            .secao-identidade-empresa-pilares div{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: white;
+            }
