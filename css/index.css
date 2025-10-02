@@ -112,7 +112,7 @@
             }
 
             .secao-identidade-empresa h1{
-                font-size: 2.60rem;
+                font-size: 2.3rem;
             }
 
             .secao-identidade-empresa p{
@@ -139,4 +139,36 @@
                 align-items: center;
                 gap: 10px;
                 color: white;
+            }
+            .secao-vendas-empresa{
+                height: 700px;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .secao-vendas-empresa-esquerdo{
+                display: flex;
+                align-items: center;
+                width: 60%;
+                height: 20%;
+                padding: 2px;
+            }
+            .secao-vendas-empresa h1{
+                margin-top: 35px;
+                font-size: 2.3rem;
+                text-align: center;
+            }
+            .secao-vendas-empresa-direito{
+                width: 60%;
+                height: 77%;
+                font-size: 1.58rem;
+                line-height: 1.7rem;
+                display: flex;
+                align-items: start;
+                padding: 0.39rem;
+
+            }
+            .secao-vendas-empresa-direito{
+                align-self: flex-end;
             }
