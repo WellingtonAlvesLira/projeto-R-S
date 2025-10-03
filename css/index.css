@@ -138,7 +138,6 @@
                 color: white;
                 width: 100%;
                 justify-content: space-around;
-                background: rgba(96, 93, 93, 0.459);
                 padding: 5px;
             }
             .secao-identidade-empresa-pilares img{
@@ -221,5 +220,86 @@
                 align-items: center;
 
             }
+
+
+@media (max-width: 768px) {
+        .menu-servicos {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        padding: 0.89rem;
+    }
+
+            .menu-servicos li{
+    list-style: none;
+    text-transform: uppercase;
+    border-right: 5px solid rgba(10, 10, 40, 0.826);
+    padding: 5px;
+    background: rgba(7, 7, 7, 0.062);
+    font-size: 12PX;
+            }
+                    
+      .secao-apresentacao-background{
+        height: 429px;
+      }
+       .secao-apresentacao{
+                 height: 400px;
+      }
+
+      .secao-apresentacao h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+      .secao-apresentacao h2 {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+    .secao-identidade-empresa h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .secao-identidade-empresa p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.secao-identidade-empresa {
+    margin-top: 10px;
+    height: 596px;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(46, 46, 46);
+    padding: 2.59rem;
+}
+
+    .secao-identidade-empresa-pilares {
+        display: flex;
+        color: white;
+        width: 44%;
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+.secao-identidade-empresa-pilares img {
+    width: 70px;
+    border-bottom: 3px dotted white;
+    margin: 3px;
+    font-size: 16px;
+}
+.secao-identidade-empresa-pilares h2{
+    font-size: 12px;
+}
+
+
+}
+
+    
 
     
