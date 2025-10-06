@@ -1,9 +1,169 @@
-           *{
-                margin: 0;
-                padding: 0;
-                
-            }
-    
+*{
+margin: 0;
+padding: 0;
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    display: inline;
+    list-style: none;
+}
+.cabeca-navegacao-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 160px;
+}
+
+.menu-navegacao-top{
+     display: flex;
+     justify-content: space-between;
+     height: 70%;
+     width: 60%;
+     background: rgba(8, 8, 8, 0.733);
+
+}
+
+.menu-navegacao-top h1{
+    font-size: 2rem;
+    color: black;
+    background: rgb(247, 247, 247);
+    padding: 2px;
+    height: 25px;
+    margin: 3px;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+
+.menu-navegacao-top  a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    margin-right: 10px;
+    color: white
+
+ 
+}
+
+.menu-navegacao-lista-top{
+    display: flex;
+    align-self: end;
+}
+
+.cabeca-navegacao-bottom{
+    display: flex;
+    justify-content: center;
+}
+
+.cabeca-navegacao-bottom nav{
+    width: 80%;
+    padding: 5px;
+}
+
+.menu-navegacao-bottom{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-navegacao-bottom a{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: black
+
+}
+.secao-apresentacao-background{
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url(https://ebm.com.br/wp-content/uploads/2023/05/moveis-planejados-1.png);
+background-size: cover;
+height: 600px;
+}
+
+.secao-apresentacao{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    height: 400px;
+    width: 80%;
+    background: rgba(8, 8, 8, 0.39);
+}
+
+.secao-apresentacao h1{
+    font-size: 3rem;
+}
+.secao-apresentacao h2{
+    font-size: 2rem;
+}
+
+.secao-apresentacao h3{
+    font-weight: 700;
+    background: rgb(182, 238, 182);
+    padding: 0.98rem;
+    width: 250px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.secao-apresentacao a{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+.menu-navegacao-top {
+display: flex;
+flex-direction: column;
+height: 70%;
+width: 90%;
+justify-content: center;
+}
+.menu-navegacao-top h1 {
+    font-size: 2rem;
+    color: black;
+    background: rgb(247, 247, 247);
+    padding: 2px;
+    height: 25px;
+    margin: 3px;
+    width: 188px;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+
+
+}
+
+.secao-apresentacao {
+    PADDING: 15PX;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 23px;
+    height: 464px;
+    width: 100%;
+    background: rgba(8, 8, 8, 0.39);
+}
+
+}
+
+
+
+
+
+ /*           
             header ul{
                 list-style: none;
                 text-align: end;
@@ -14,7 +174,6 @@
                 display: inline;
                 padding: 0.34rem;
                 text-transform: uppercase;
-                font-size: 1.2rem;
                 font-weight: 800;        
                 
             }
@@ -34,7 +193,7 @@
         }
 
            nav{
-            width: 750px;
+            width: 50%;
            }
 
            .titulo-navegacao{
@@ -222,83 +381,7 @@
             }
 
 
-@media (max-width: 768px) {
-        .menu-servicos {
-        display: flex;
-        justify-content: space-between;
-        width: 80%;
-        padding: 0.89rem;
-    }
 
-            .menu-servicos li{
-    list-style: none;
-    text-transform: uppercase;
-    border-right: 5px solid rgba(10, 10, 40, 0.826);
-    padding: 5px;
-    background: rgba(7, 7, 7, 0.062);
-    font-size: 12PX;
-            }
-                    
-      .secao-apresentacao-background{
-        height: 429px;
-      }
-       .secao-apresentacao{
-                 height: 400px;
-      }
-
-      .secao-apresentacao h1 {
-    font-size: 32px;
-    text-align: center;
-}
-
-      .secao-apresentacao h2 {
-    font-size: 16px;
-    text-align: center;
-    line-height: 1.5;
-}
-
-    .secao-identidade-empresa h1 {
-        font-size: 24px;
-        text-align: center;
-    }
-    .secao-identidade-empresa p {
-    font-size: 16px;
-    text-align: center;
-}
-
-.secao-identidade-empresa {
-    margin-top: 10px;
-    height: 596px;
-    display: flex
-;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background: rgb(46, 46, 46);
-    padding: 2.59rem;
-}
-
-    .secao-identidade-empresa-pilares {
-        display: flex;
-        color: white;
-        width: 44%;
-        padding: 0px;
-        flex-direction: column;
-        align-items: center;
-        gap: 18px;
-    }
-.secao-identidade-empresa-pilares img {
-    width: 70px;
-    border-bottom: 3px dotted white;
-    margin: 3px;
-    font-size: 16px;
-}
-.secao-identidade-empresa-pilares h2{
-    font-size: 12px;
-}
-
-
-}
 
     
 
