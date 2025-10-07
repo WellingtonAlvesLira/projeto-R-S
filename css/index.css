@@ -15,6 +15,7 @@ li{
     align-items: center;
     text-decoration: none;
     height: 160px;
+    background: rgba(1, 10, 34, 0.432);
 }
 
 .menu-navegacao-top{
@@ -22,7 +23,9 @@ li{
      justify-content: space-between;
      height: 70%;
      width: 60%;
-     background: rgba(8, 8, 8, 0.733);
+     background: rgba(105, 101, 101, 0.082);
+     border-right: 1px solid black;
+     border-top: 1px solid black;
 
 }
 
@@ -55,22 +58,27 @@ li{
 .cabeca-navegacao-bottom{
     display: flex;
     justify-content: center;
+    background: black;
 }
 
 .cabeca-navegacao-bottom nav{
     width: 80%;
     padding: 5px;
+
 }
 
 .menu-navegacao-bottom{
+    border: 1px solid white;
     display: flex;
     justify-content: space-around;
+    background: rgba(97, 105, 107, 0.514);
+    padding: 5px;
 }
 
 .menu-navegacao-bottom a{
     font-size: 1.4rem;
     text-transform: capitalize;
-    color: black
+    color: white;
 
 }
 .secao-apresentacao-background{
@@ -135,14 +143,10 @@ height: 600px;
     font-family: 'Trebuchet MS';
 }
 
-.sobre{
-    display: flex; 
-    flex-direction: column; 
-    gap: 50px;
-}
 
 .secao-sobre{
     display: flex;
+    gap: 20px;
 }
 
 .secao-sobre h1{
@@ -163,8 +167,10 @@ height: 600px;
 }
 
 .secao-pilares{
+    margin-top: 25px;
     padding: 10px;
     display: flex;
+    gap: 20px;
     justify-content: space-around;
 }
 
@@ -218,7 +224,42 @@ justify-content: center;
     background: rgba(8, 8, 8, 0.39);
 }
 
+.secao-sobre {
+display: flex;
+flex-direction: column;
 }
+
+.secao-sobre h1 {
+    font-size: 1.9rem;
+    padding: 10px;
+    width: 95%;
+    text-align: center;
+}
+
+.secao-sobre p {
+    font-size: 1.4rem;
+    width: 90%;
+    text-align: center;
+    padding: 15px;  
+    line-height: 2rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.491);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.491);
+}
+
+.secao-pilares {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.secao-pilares div{
+    width: 80%;
+    text-align: center;
+}
+}
+
 
 
 
