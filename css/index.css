@@ -116,6 +116,67 @@ height: 600px;
     color: white;
 }
 
+.secao-apresentacao-btn-what{
+    text-align: center;
+}
+
+.secao-apresentacao-btn-what img{
+    width: 80px; 
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(45, 214, 121, 0.733);
+}
+
+.secao-apresentacao-btn-what span{
+    background: rgba(0, 0, 0, 0.667);
+    padding: 5px;
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Trebuchet MS';
+}
+
+.sobre{
+    display: flex; 
+    flex-direction: column; 
+    gap: 50px;
+}
+
+.secao-sobre{
+    display: flex;
+}
+
+.secao-sobre h1{
+    font-size: 1.9rem;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.secao-sobre p{
+    font-size: 1.4rem;
+    width: 40%;
+    padding: 10px;
+    margin-top: 10px;
+    line-height: 2rem;
+    border-right: 5px solid rgba(0, 0, 0, 0.491);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.491);
+}
+
+.secao-pilares{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.secao-pilares img{
+    width: 120px;
+}
+
+.secao-pilares span{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
 
 
 
@@ -145,7 +206,7 @@ justify-content: center;
 }
 
 .secao-apresentacao {
-    PADDING: 15PX;
+    padding: 15px;
     color: white;
     display: flex;
     align-items: center;
