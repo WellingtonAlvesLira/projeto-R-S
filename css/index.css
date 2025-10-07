@@ -59,6 +59,10 @@ li{
     display: flex;
     justify-content: center;
     background: black;
+    position: sticky;
+    top: 0;
+
+
 }
 
 .cabeca-navegacao-bottom nav{
