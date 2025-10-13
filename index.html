@@ -22,7 +22,7 @@
                   <a href="">serviço</a>
                </li>
                <li>
-                  <a href="">quem somos</a>
+                  <a href="#quem-somos">quem somos</a>
                </li>
                <li>
                   <a href="">contato</a>
@@ -47,10 +47,10 @@
       </section>
       <div style="background: black; height: 30px;">
       </div>
-      <section class="sobre">
+      <section class="sobre" id="quem-somos">
          <header class="secao-sobre">
             <h1>Razões para você se tornar nosso Cliente...</h1>
-            <p>Nossa equipe de profissionais trabalha com o foco do cliente, que vai além de atender expectativas. Tudo o que é projetado é fielmente executado.<br>
+            <p class="reveal-text">Nossa equipe de profissionais trabalha com o foco do cliente, que vai além de atender expectativas. Tudo o que é projetado é fielmente executado.<br>
                A produção de cada item é feita de forma minuciosa, utilizando o melhor das tecnologias nacionais e importadas, que trazem alta credibilidade ao processo de corte, 
                colagem e usinagem das peças, além de alta precisão de acabamento de todos os produtos.<br> 
                Em cada projeto entregamos um pouco da nossa essência e garantimos a qualidade do nosso trabalho.
@@ -72,23 +72,23 @@
          <nav>
             <ul class="menu-navegacao-bottom">
                <li>
-                  <a href="">banheiro</a>
+                  <a href="banheiro.html">banheiro</a>
                </li>
                <li>
-                  <a href="">cozinha</a>
+                  <a href="cozinha.html">cozinha</a>
                </li>
                <li>
-                  <a href="">escritório</a>
+                  <a href="escritorio.html">escritório</a>
                </li>
                <li>
-                  <a href="">quarto</a>
+                  <a href="quarto.html">quarto</a>
                </li>
                <li>
-                  <a href="">sala</a>
+                  <a href="sala.html">sala</a>
                </li>
             </ul>
          </nav>
-         <span style="color: white; display: inline; margin: 13px 0 0 11px"><a href="index.html">Voltar ao topo</a></span>
+         <span style="color: white; display: inline; margin: 13px 0 0 11px; scroll-behavior: smooth;"><a href="index.html">Voltar ao topo</a></span>
       </section>
       <section class="secao-servicos">
          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -122,7 +122,7 @@
       <section class="secao-dicas-empresa">
          <header class="secao-dicas-titulo-parag">
             <h1>O que fazer na hora de comprar Móveis Planejados ?</h1>
-            <p>
+            <p class="reveal-text">
                Se você acabou de pegar a chave do seu Apartamento ou está nesse momento fazendo orçamento para mobiliar sua casa, queremos lhe apresentar uma Solução para que você faça uma compra excelente e segura.
                A R&S Móveis Planejados está no mercado desde 2018 mais de 3.000 clientes, com um alto índice de satisfação, sempre oferecendo soluções inovadoras com requinte, design contemporâneo com preços e condições de pagamento sempre adequados a necessidade de cada cliente.
                Nós temos a certeza que cada cliente atendido pela R&S é único, nós temos a paciência e a convicção de que devemos atender às necessidades que cada projeto exige, dando a cada um deles, um toque especial que traduz os gostos e desejos de cada família.
@@ -160,6 +160,25 @@
          </div>
       </footer>
 </main>
+      <script>
+         document.addEventListener("DOMContentLoaded", () => {
+  const revealElements = document.querySelectorAll('.reveal-text');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Opcional: para a animação de acontecer apenas uma vez
+      }
+    });
+  }, {
+    threshold: 0.1 // 10% do elemento visível
+  });
+
+  revealElements.forEach(el => observer.observe(el));
+});
+      </script>
+
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    

@@ -4,7 +4,6 @@ padding: 0;
 font-size: 12px;
 font-family: Arial, Helvetica, sans-serif;
 }
-
 li{
 display: inline;
 list-style: none;
@@ -146,6 +145,18 @@ margin-top: 10px;
 line-height: 2rem;
 border-right: 1px solid rgba(0, 0, 0, 0.491);
 border-bottom: 5px solid rgba(0, 0, 0, 0.491);
+}
+
+.reveal-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition-delay: 0.2s; /* Atraso na animação para criar o efeito "devagar" */
+}
+
+.reveal-text.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 .secao-pilares{
 margin-top: 25px;
