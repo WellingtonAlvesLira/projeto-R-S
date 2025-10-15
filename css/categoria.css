@@ -5,13 +5,22 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    padding: 10px;
 }
 .secao-de-fotos{
     display: flex;
     justify-content: center;
-    gap: 20px;
-    width: 80%;
-    padding: 5px;
-    flex-wrap: wrap;
+    gap: 5px;
     box-shadow: 10px 10px 8px 10px #f0ecec;
+}
+
+.secao-de-fotos img{
+    width: 70%;
+    margin: 5px auto;
+}
+
+
+@media (max-width: 768px) {
+
+
 }
