@@ -4,7 +4,6 @@ padding: 0;
 font-size: 12px;
 font-family: Arial, Helvetica, sans-serif;
 }
-
 li{
 display: inline;
 list-style: none;
@@ -57,7 +56,7 @@ z-index: 1;
 }
 .cabeca-navegacao-bottom nav{
 width: 90%;
-padding: 5px;
+margin-top: 15px;
 }
 .menu-navegacao-bottom{
 border-left: 1px solid white;
@@ -129,6 +128,7 @@ font-family: 'Trebuchet MS';
 margin-top: 15px;
 }
 .secao-sobre{
+margin-top: 10px;
 display: flex;
 gap: 20px;
 }
@@ -147,6 +147,18 @@ line-height: 2rem;
 border-right: 1px solid rgba(0, 0, 0, 0.491);
 border-bottom: 5px solid rgba(0, 0, 0, 0.491);
 }
+
+.reveal-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition-delay: 0.2s; /* Atraso na animação para criar o efeito "devagar" */
+}
+
+.reveal-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 .secao-pilares{
 margin-top: 25px;
 padding: 10px;
@@ -164,7 +176,9 @@ font-size: 1.4rem;
 .secao-servicos{
 display: flex; 
 justify-content: center; 
+align-items: center;
 margin: 10px auto;
+height: 690px;
 
 }
 .img-carousel{
@@ -189,7 +203,8 @@ height: 500px;
     align-items: center;
     justify-content: center;
     margin-top: 15px;
-    gap: 25px;
+    margin-bottom: 15px;
+    
 }
 
 .secao-dicas-empresa h1{
@@ -258,14 +273,15 @@ height: 501px;
 }
 
 .cabeca-navegacao-bottom {
-    display: flex; 
-    justify-content: center;
-    background: black;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    text-align: center;
-}
+display: flex;
+align-items: center;
+flex-direction: column;
+background: black;
+position: sticky;
+top: 0;
+z-index: 1;
+text-align: center;
+    }
 .secao-apresentacao {
 padding: 15px;
 color: white;
@@ -298,14 +314,16 @@ border-bottom: 5px solid rgba(0, 0, 0, 0.491);
 display: flex;
 flex-direction: column;
 align-items: center;
+margin-bottom: 60px;
 }
 .secao-pilares div{
 width: 80%;
 text-align: center;
 }
 
-.cabeca-navegacao-bottom nav {
-    width: 100%;
+.secao-servicos{
+height: 584px;
+
 }
 .img-carousel {
 width: 90%;
@@ -341,193 +359,4 @@ height: 400px;
     padding: 11px;
 }
 
-}
-/*           
-header ul{
-list-style: none;
-text-align: end;
-margin-bottom: 10px;
-}
-.lista-navegacao li{
-display: inline;
-padding: 0.34rem;
-text-transform: uppercase;
-font-weight: 800;        
-}
-li:hover{
-cursor: pointer;
-}
-a{
-text-decoration: none;
-color: white;
-}
-.cabecalho-navegacao{
-display: flex;
-justify-content: center;
-align-items: end;
-height: 10rem;
-background: rgba(31, 30, 30, 0.671);
-}
-nav{
-width: 50%;
-}
-.titulo-navegacao{
-border: 2px solid white;
-display: inline;
-font-size: 2.3rem;
-padding-left: 0.28rem;
-color: white;
-background: white;
-color: black;
-}
-.menu-servicos{
-display: flex;
-justify-content: space-between;
-width: 80%;
-padding: 0.89rem;
-}
-.menu-servicos li{
-list-style: none;
-text-transform: uppercase;
-border-right: 5px solid rgba(10, 10, 40, 0.826);
-padding: 5px;
-background: rgba(7, 7, 7, 0.062);
-}
-.menu-servicos a{
-color: black;
-}
-.menu-servicos a:hover{
-color: black;
-padding: 4px;
-border-bottom: 5px solid rgb(0, 0, 0);
-transition: 1s;
-}
-.secao-apresentacao-background{
-display: flex;
-justify-content: center;
-background-image: url(https://ebm.com.br/wp-content/uploads/2023/05/moveis-planejados-1.png);
-background-size: cover;
-}
-.secao-apresentacao{
-background: rgba(29, 40, 59, 0.253);
-color: white;
-height: 800px;
-width: 80%;
-padding: 0.89rem;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-gap: 20px;           
-}
-.secao-apresentacao h1{
-font-size: 2.9rem;
-}
-.secao-apresentacao h2{
-font-size: 1.96rem;
-}
-.secao-apresentacao h3{
-font-weight: 700;
-background: rgb(121, 212, 121);
-padding: 0.98rem;
-border-radius: 20px;
-}
-.secao-identidade-empresa{
-margin-top: 10px;
-height: 500px;
-display: flex;
-flex-direction: column;
-justify-content:space-around;
-align-items: center;
-background: rgb(46, 46, 46);
-padding: 0.59rem;
-}
-.secao-identidade-empresa header{
-width: 90%;
-color: white;
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 20px;
-}
-.secao-identidade-empresa h1{
-font-size: 2.3rem;
-}
-.secao-identidade-empresa p{
-font-size: 1.58rem;
-text-align: center;
-}
-.secao-identidade-empresa-pilares{
-display: flex;
-color: white;
-width: 100%;
-justify-content: space-around;
-padding: 5px;
-}
-.secao-identidade-empresa-pilares img{
-width: 140px;
-border-bottom:3px dotted white;
-margin: 3px;
-}
-.secao-identidade-empresa-pilares div{
-display: flex;
-align-items: center;
-gap: 10px;
-color: white;
-}
-.secao-vendas-empresa{
-height: 750px;
-display: flex;
-justify-content: center;
-gap: 10px;
-}
-.secao-vendas-empresa-esquerdo{
-display: flex;
-align-items: center;
-width: 60%;
-height: 20%;
-padding: 2px;
-}
-.secao-vendas-empresa h1{
-margin-top: 35px;
-font-size: 2.3rem;
-text-align: center;
-}
-.secao-vendas-empresa-direito{
-width: 60%;
-height: 85%;
-font-size: 1.58rem;
-line-height: 1.7rem;
-display: flex;
-align-items: start;
-padding: 0.39rem;
-}
-.secao-vendas-empresa-direito{
-align-self: flex-end;
-}
-footer .contatos{
-border-bottom: 10px solid rgb(255, 251, 0);
-display: flex;
-justify-content: space-around;
-width: 100%;
-margin-top: 10px;
-background: rgba(7, 7, 7, 0.062);
-text-align: center;
-color: black;
-}
-footer div{
-margin-top: 20px;
-}
-.pagamento-localizacao{
-align-self: center;
-line-height: 1.5rem;
-}
-footer img{
-padding: 5px;
-}
-.localizacao-empresa{
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
 }
