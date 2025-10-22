@@ -116,6 +116,10 @@ border-radius: 20px;
 }
 .secao-apresentacao-btn-what{
 text-align: center;
+  width: 100px; /* Ajuste o tamanho conforme necessário */
+  height: 100px;
+  border-radius: 50%; /* Torna a imagem circular */
+  overflow: hidden;
 }
 .secao-apresentacao-btn-what img{
 width: 80px; 
@@ -131,6 +135,27 @@ font-weight: 300;
 font-family: 'Trebuchet MS';
 margin-top: 15px;
 }
+
+/*
+Animação feita com a ajuda do modo IA
+https://www.google.com/search?q=anima%C3%A7%C3%A3o+pra+uma+imagem+do+whatsapp+css&sca_esv=17b6ad23b7736742&sxsrf=AE3TifPpjtcBQml-Scnop6IBz92eSpnbGQ%3A1761154204987&ei=nBT5aNuEPODV1sQP4fKBiA8&ved=0ahUKEwjbwqHWqriQAxXgqpUCHWF5APEQ4dUDCBE&uact=5&oq=anima%C3%A7%C3%A3o+pra+uma+imagem+do+whatsapp+css&gs_lp=Egxnd3Mtd2l6LXNlcnAiKWFuaW1hw6fDo28gcHJhIHVtYSBpbWFnZW0gZG8gd2hhdHNhcHAgY3NzMgcQIRgKGKABMgcQIRgKGKABMgcQIRgKGKABMgUQIRifBTIFECEYnwUyBRAhGJ8FMgUQIRifBTIFECEYnwUyBRAhGJ8FSNxRUABYz1BwAXgAkAEAmAHCAaABvSuqAQQwLjM0uAEDyAEA-AEBmAIjoAK7LMICBBAjGCfCAhEQLhiABBixAxiDARjHARjRA8ICCxAuGIMBGLEDGIAEwgILEC4YgAQYsQMYgwHCAgsQLhiABBjHARjRA8ICBRAAGIAEwgIOEAAYgAQYigUYsQMYgwHCAgoQIxjwBRjJAhgnwgIKEAAYgAQYigUYQ8ICCBAAGIAEGLEDwgIIEC4YgAQYsQPCAgsQABiABBixAxiDAcICDRAuGEMYsQMYgAQYigXCAggQLhixAxiABMICBRAuGIAEwgIHEAAYgAQYCsICBxAAGIAEGA3CAgYQABgeGA3CAgYQABgWGB7CAggQABiABBiiBMICBRAAGO8FmAMAkgcEMS4zNKAH4YUCsgcEMC4zNLgHtizCBwYxLjMwLjTIB1Q&sclient=gws-wiz-serp
+*/
+.imagem-animada {
+  width: 100%;
+  height: 100%;
+  animation: pulse 2s infinite alternate; /* Aplica a animação */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Tamanho normal */
+  }
+  100% {
+    transform: scale(1.1); /* Aumenta a imagem */
+  }
+}
+/*fim da animação btn whatsapp*/
+
 .secao-sobre{
 margin-top: 10px;
 display: flex;
