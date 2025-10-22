@@ -1,4 +1,22 @@
 
+
+.container-categorias-fotos{
+display: flex; 
+flex-direction: column; 
+justify-content: center; 
+align-items: center;
+}
+
+.container-categorias-fotos h1{
+    text-align: center; 
+    margin: 20px;
+}
+
+.container-categorias-fotos h4{
+    max-width: 80%;
+    text-align: justify;
+}
+
 .secao-fotos-container{
     margin-top: 5px;
     width: 80%;
@@ -6,4 +24,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+}
+
+@media (max-width: 768px) {
+
 }

@@ -36,15 +36,18 @@ border-left: 5px solid white;
 
 }
 .menu-navegacao-top  a{
-text-decoration: none;
-text-transform: capitalize;
-font-size: 1.4rem;
+font-size: 1.2rem;
+text-transform: uppercase;
 margin-right: 10px;
 color: white
 }
 .menu-navegacao-lista-top{
 display: flex;
 align-self: end;
+}
+
+.menu-navegacao-lista-top a:hover{
+    text-decoration: none;
 }
 .cabeca-navegacao-bottom{
 display: flex;
@@ -61,15 +64,14 @@ margin-top: 15px;
 .menu-navegacao-bottom{
 border-left: 1px solid white;
 border-right: 1px solid white;
-
 display: flex;
 justify-content: space-around;
 background: rgba(97, 105, 107, 0.514);
 padding: 5px;
 }
 .menu-navegacao-bottom a{
-font-size: 1.4rem;
-text-transform: capitalize;
+font-size: 1.2rem;
+text-transform: uppercase;
 color: white;
 }
 .secao-apresentacao-background{
@@ -95,7 +97,7 @@ background: rgba(8, 8, 8, 0.39);
 font-size: 3rem;
 }
 .secao-apresentacao h2{
-font-size: 2rem;
+font-size: 2.5rem;
 }
 .secao-apresentacao h3{
 font-weight: 700;
@@ -105,11 +107,6 @@ width: 250px;
 text-align: center;
 border-radius: 20px;
 
-}
-.secao-apresentacao a{
-font-size: 16px;
-text-decoration: none;
-color: white;
 }
 .secao-apresentacao-btn-what{
 text-align: center;
@@ -271,7 +268,8 @@ width: 188px;
 border-left: 5px solid white;
 }
 .secao-apresentacao-background {
-height: 501px;
+height: 500px;
+text-align: center;
 }
 
 .cabeca-navegacao-bottom {
@@ -283,7 +281,12 @@ position: sticky;
 top: 0;
 z-index: 1;
 text-align: center;
-    }
+}
+
+.cabeca-navegacao-bottom nav {
+    width: 95%;
+    margin-top: 15px;
+}
 .secao-apresentacao {
 padding: 15px;
 color: white;
@@ -299,6 +302,8 @@ background: rgba(8, 8, 8, 0.39);
 .secao-sobre {
 display: flex;
 flex-direction: column;
+gap: 0px;
+height: auto;
 }
 .secao-sobre h1 {
 width: 100%;
@@ -308,6 +313,7 @@ font-size: 1.4rem;
 width: 100%;
 text-align: center;
 padding: 15px;  
+margin-top: 0px;
 line-height: 2rem;
 border-right: 1px solid rgba(0, 0, 0, 0.491);
 border-bottom: 5px solid rgba(0, 0, 0, 0.491);
@@ -336,6 +342,7 @@ height: 400px;
     background: linear-gradient(135deg, #cedce7 0%, #596a72 100%);
     border-radius: 40px 0 0px 0;
     border-top: 1px solid black;
+    padding: 10px;
 }
 
 .secao-dicas-empresa h1 {
