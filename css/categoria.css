@@ -1,6 +1,8 @@
 
 
 .container-categorias-fotos{
+background-image: url(https://media.istockphoto.com/id/1403196779/pt/foto/a-happy-mixed-race-family-of-three-relaxing-in-the-lounge-and-being-playful-together-loving.jpg?s=612x612&w=0&k=20&c=IScu9R9AtQgk9IGSWanvL3Sgq4Xunn6tFw1-4SD-gzk=);
+background-repeat: no-repeat;
 display: flex; 
 flex-direction: column; 
 justify-content: center; 
@@ -10,11 +12,24 @@ align-items: center;
 .container-categorias-fotos h1{
     text-align: center; 
     margin: 20px;
+    padding: 5px;
+    font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.089);
+    border-radius: 2px 4px ;
 }
 
 .container-categorias-fotos h4{
-    max-width: 80%;
-    text-align: justify;
+    width: 80%;
+    text-align: center;
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 10px;
+    color: white;
+}
+
+.container-categorias-fotos h4 > span{
+    padding: 2px;
+    color: green; text-transform: uppercase; background-color: white;
 }
 
 .secao-fotos-container{
