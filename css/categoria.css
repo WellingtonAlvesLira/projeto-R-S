@@ -49,27 +49,40 @@ align-items: center;
 
        form{
          display: flex;
-         flex-direction: column;
-         gap: 5px;
-         
+         flex-direction: column; 
+         gap: 3px;      
       
+       }
+       form label{
+        text-transform: uppercase;
+        margin: 0;
+
+        
        }
        form input{
          text-transform: uppercase;
          height: 30px;
          padding: 3px;
+         margin-bottom: 5px;
          
        }
        form input[type=submit]{
-         margin: auto;
+         margin: 5px auto;
          width: 60%;
+         color: black;
+         font-weight: 800;
+         border: 2px solid black;
+         cursor: pointer;
+
        }
        form textarea{
          height: 150px;
+         padding: 2px;
        }
        header{
          text-align: center;
        }
+
        @media (max-width: 768px) {
               .secao-form-contato{
               width: 300px;

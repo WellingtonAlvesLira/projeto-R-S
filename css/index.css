@@ -157,10 +157,10 @@ https://www.google.com/search?q=anima%C3%A7%C3%A3o+pra+uma+imagem+do+whatsapp+cs
 /*fim da animação btn whatsapp*/
 
 .secao-sobre{
-margin-top: 10px;
+margin-top: 20px;
 display: flex;
 gap: 20px;
-height: 570px;
+
 }
 .secao-sobre h1{
 font-size: 1.9rem;
@@ -334,7 +334,6 @@ background: rgba(8, 8, 8, 0.39);
 display: flex;
 flex-direction: column;
 gap: 0px;
-height: auto;
 }
 .secao-sobre h1 {
 width: 100%;
