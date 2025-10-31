@@ -41,6 +41,40 @@ align-items: center;
     gap: 20px;
 }
 
-@media (max-width: 768px) {
+       .secao-form-contato{
+              margin: 20px;
+              padding: 5px;
+              width: 400px;
+       }
+
+       form{
+         display: flex;
+         flex-direction: column;
+         gap: 5px;
+         
+      
+       }
+       form input{
+         text-transform: uppercase;
+         height: 30px;
+         padding: 3px;
+         
+       }
+       form input[type=submit]{
+         margin: auto;
+         width: 60%;
+       }
+       form textarea{
+         height: 150px;
+       }
+       header{
+         text-align: center;
+       }
+       @media (max-width: 768px) {
+              .secao-form-contato{
+              width: 300px;
+              margin: 20px;
+              padding: 5px;
+       }
 
 }
